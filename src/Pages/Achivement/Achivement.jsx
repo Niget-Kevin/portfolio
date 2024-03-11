@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import ErrorComponent from '../Error/Error';
 import Slider from '../../Components/Slider/slider'; 
-import { FaReact, FaSass, FaNodeJs } from 'react-icons/fa';
+import { FaReact, FaSass, FaNodeJs, FaJs } from 'react-icons/fa'; // Ajout de FaJs
 import reduxIcon from '../../Design/icon/redux.png';
 import postmanIcon from '../../Design/icon/postman.png';
 import './Achivement.scss';
@@ -21,7 +21,7 @@ const Achivement = () => {
             <h1 className='achivement_title'>{selectedAchivement.title}</h1>
             <section className='achivement'>
                 <div className='achivement-slide'>  
-                    <Slider images={selectedAchivement.picturs} />
+                    <Slider images={selectedAchivement.pictures} />
                         <div className='achivement-content'>
                         <h2 className='achivement-content__title'>
                             {selectedAchivement.description[0].title}
@@ -61,6 +61,12 @@ const Achivement = () => {
                                 <div className="icon-container">
                                     <img src={postmanIcon} alt="Postman" />
                                     <span className="icon-name">Postman</span>
+                                </div>
+                            )}
+                            {tagsWithSpaces.includes("JavaScript") && (
+                                <div className="icon-container">
+                                    <FaJs className="icon-JavaScript" /> {/* Utilisation de FaJs */}
+                                    <span className="icon-name">JavaScript</span>
                                 </div>
                             )}
                         </div>

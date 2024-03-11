@@ -3,7 +3,7 @@
         "id": "argent-bank",
         "title": "Argent Bank",
         "img": "/Design/images/argent-bank.png",
-        "picturs":
+        "pictures":
             [
                 {"src": "/Design/projects/argent-bank/argent-bank-1.png", "alt": "argent bank page d'accueil"},
                 {"src": "/Design/projects/argent-bank/argent-bank-2.png","alt": "argent bank page login"},
@@ -20,6 +20,7 @@
             "Sass",
             "Redux",
             "Postman",
+            "JavaScript",
             "NodeJS"                
         ]
     },
@@ -35,12 +36,22 @@
         "id": "Kasa",
         "title": "Kasa",
         "img": "Design/images/Kasa.png",
+        "pictures":
+            [
+                {"src": "/Design/projects/kasa/kasa1.png", "alt": "argent bank page d'accueil"},                
+                {"src": "/Design/projects/kasa/kasa3.png","alt": "argent bank page utilisateur"},
+                {"src": "/Design/projects/kasa/kasa4.png","alt": "argent bank page utilisateur modification nom d'utilisateur"}
+            ],      
         "logo": "",
-        "description": "Available Balance",
+        "description":[
+            {"title": "Refonte de Kasa avec React"},
+        {"text": "Dans le cadre de ce projet, vous êtes chargé de la refonte complète du site Kasa en utilisant React et React Router. L'objectif principal est de créer une application web moderne offrant aux utilisateurs la possibilité de naviguer facilement entre les différentes fonctionnalités tout en garantissant la sécurité de leurs comptes. Vous utiliserez des technologies telles que Redux pour gérer l'état global de l'application et Sass pour améliorer la gestion du style CSS. De plus, vous mettrez en œuvre NodeJS pour le back-end afin de permettre la communication avec les serveurs et de fournir une expérience utilisateur fluide et réactive. Ce projet représente une occasion unique d'apporter une contribution significative à l'évolution de Kasa dans le domaine de la location d'appartements entre particuliers."}
+        ],
         "tag":[ 
             "React",
             "Sass",
-            "NodeJS"                
+            "NodeJS",
+            "JavaScript"                
         ]
     },
     {
@@ -60,44 +71,26 @@
         "tag": " "
     },
     {
-        "id": "724events",
-        "title": "724 Events",
-        "img": "",
-        "logo": "",
-        "description": "Available Balance",
-        "tag":[
-            "HTML",
-            "CSS",
-            "Git",
-            "Bootstrap 5",
-            "Sass",
-            "JavaScript"
-        ]
-    },
-    {
         "id": "ohmyfood",
-        "title": "ohmyfood",
-        "img": "",
+        "title": "Ohmyfood",
+        "img": "/Design/images/ohmyfood.png",
+        "pictures": [
+                {"src": "/public/Design/projects/ohmyfood/ohmyfood1.png", "alt": "argent bank page d'accueil"},
+                {"src": "/public/Design/projects/ohmyfood/ohmyfood2.png", "alt": "argent bank page d'accueil"},
+                {"src": "/public/Design/projects/ohmyfood/ohmyfood3.png", "alt": "argent bank page d'accueil"}
+            ],
         "logo": "",
-        "description": "Available Balance",
+        "description": [
+            {
+                "title": "Création de l'application Ohmyfood",
+                "text": "Ohmyfood est une startup innovante dans le domaine de la restauration, offrant aux clients la possibilité de composer leur propre menu et de le commander en ligne pour une expérience culinaire unique."
+            }
+        ],
         "tag":[
             "HTML",
             "CSS",
-            "Sass",
-            "Git"
+            "Sass"            
         ] 
-    },
-    {
-        "id": "Booki",
-        "title": "Booki",
-        "img": "",
-        "logo": "",
-        "description": "Available Balance",
-        "tag":[
-            "HTML",
-            "CSS",
-            "Figma",
-            "Git"
-        ] 
-    } 
+    }
+
 ]

@@ -8,7 +8,9 @@
     justify-content: center;
     margin-bottom: 50px;
   }
-  
+  .footer a{
+    color: $background-footer;
+  }
   .footer-text {
     display: grid;
     justify-content: center;

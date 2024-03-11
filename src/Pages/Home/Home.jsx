@@ -12,11 +12,11 @@ function Home() {
                 <h1 className='home-text'>Niget Kevin <hr className='home-divider'/> développeur Web Frontend</h1>
             </div>
 
-            <section id='profile'>
-                <h2 className='profile-title'>Présentation</h2>                
-                <div className='profile-content'>     
+            <section id='profil'>
+                <h2 className='profil-title'>Présentation</h2>                
+                <div className='profil-content'>     
                    {/*  <img src="/Design/images/moi2.png" alt="test" className='profil-content-img'/>   */}     
-                    <div className='profile-content__text'>
+                    <div className='profil-content__text'>
                         <p>Tout au long de mon parcours professionnel,j’ai toujours été attiré par les opportunités et les défis qui me passionnent. </p>
                         <p>C’est pourquoi je suis enthousiaste à l’idée d’avoir un impact significatif au sein d’une entreprise en pleine croissance.</p>
                         <p>Mon expérience variée, allant du métier de carrossier à celui de déménageur, en passant par livreur, électricien, technicien fibre, chef de chantier et aide conducteur de travaux, m’a permis d’acquérir une compréhension approfondie de différents domaines.</p>

@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavHashLink } from 'react-router-hash-link';
 import Logo from '../Logo/logo';
 import './Header.scss';
 
 function Header() {
+    
 
     window.addEventListener('scroll', () => {
         const nav = document.querySelector('header nav');
@@ -26,34 +27,35 @@ function Header() {
             <nav id="navbar">
                 <ul>                   
                     <li>
-                        <Link to="/" className="nav_bottom">
+                        <NavHashLink smooth to="/" className="nav_bottom">
                             <span className="nav-text">Accueil</span>
                             <i className="fa-solid fa-house nav-icon" title="Accueil"></i>
-                        </Link>
+                        </NavHashLink>
                     </li>
                     <li>
-                        <Link to="/profil" className="nav_bottom">
+                        <NavHashLink smooth to="/#profil" className="nav_bottom">
                             <span className="nav-text">Profil</span>
                             <i className="fa-solid fa-circle-user nav-icon" title="Profil"></i>
-                        </Link>
+                        </NavHashLink>
                     </li>
-                    <li>
-                        <Link to="/competences" className="nav_bottom">
+                    {/* ajouter une page profil */}
+                    {/* <li>
+                        <NavHashLink smooth to="/competences" className="nav_bottom">
                             <span className="nav-text">Compétences</span>
                             <i className="fa-solid fa-screwdriver-wrench nav-icon" title="Compétences"></i>
-                        </Link>
-                    </li>
+                        </NavHashLink>
+                    </li> */}
                     <li>
-                        <Link to="/realisations" className="nav_bottom">
+                        <NavHashLink smooth to="/#portfolio" className="nav_bottom">
                             <span className="nav-text">Réalisations</span>
                             <i className="fa-solid fa-code nav-icon" title="Réalisations"></i>
-                        </Link>
+                        </NavHashLink>
                     </li>
                     <li>
-                        <Link to="/contact" className="nav_bottom">
+                        <NavHashLink smooth to="/#contact" className="nav_bottom">
                             <span className="nav-text">Contact</span>
                             <i className="fa-solid fa-envelope nav-icon" title="Contact"></i>
-                        </Link>
+                        </NavHashLink>
                     </li>
                 </ul>
             </nav>

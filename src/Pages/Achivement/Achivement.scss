@@ -16,7 +16,9 @@
             margin-bottom: 100px;
     }
 }
-
+.achivement h3{
+    border-bottom: 2px solid black;
+}
 
 .achivement-content{
     display: grid;
@@ -31,6 +33,8 @@
         }
         &__text{
             background-color: $color-secondary;
+            font-size: 1.5em;
+            font-weight: 300;
             display: grid;
             width: 90%;
             text-align: center;
@@ -38,7 +42,6 @@
             margin: 5px;
             gap: 30px;
             justify-content: center;
-            font-size: 1.2rem;
             line-height: 1.5;
             color:black; ;
             border-radius: 15px;
@@ -124,4 +127,7 @@
 }
 .node-icon{
     color: rgb(104, 159, 99);
+}
+.icon-JavaScript {
+    color: #fbbc04;
 }

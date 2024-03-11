@@ -1,7 +1,6 @@
 import React from 'react';
 
-import ContactLinks from '../ContactLinks/ContactLinks';
-import data from '../../Data/contact.json'
+
 import './Contact.scss'
 
 function Contact() {
@@ -9,19 +8,8 @@ function Contact() {
         <section id="contact">
             <h2 className="contact-title">Me contacter</h2>
             <div className="contact-me">                                
-                    <a href="kevin.niget@gmail.com" className="fa-solid fa-envelope "> kevin.niget@gmail.com</a>                
-                <div>        
-                    {data.map(data => {
-                        return (
-                        <ContactLinks
-                            key={data.id} 
-                            id={data.id} 
-                            img={data.title} 
-                            title={data.title}                            
-                        />
-                        )
-                    })}
-                </div> 
+            <a href="mailto:kevin.niget@gmail.com" className="fa-solid fa-envelope"> Mail</a>                
+                
             </div>
         </section>
     );

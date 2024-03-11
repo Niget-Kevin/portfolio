@@ -35,7 +35,7 @@ height: 100%;
   margin: 2rem auto;
 }
 
-#profile {
+#profil {
     display: grid;
     color: black;
     padding-top: 42px;
@@ -51,12 +51,12 @@ height: 100%;
     gap: 50px;  
 }
 
-.profile-title {
+.profil-title {
     margin: 10px;
     
   }
 
-.profile-content {
+.profil-content {
   display: flex;
   gap: 5px;  
   width: 100%;
@@ -73,7 +73,7 @@ height: 100%;
 
 }
 
-.profile-content__text {
+.profil-content__text {
   display: grid;
   width: 90%;
   text-align: center;
@@ -89,7 +89,7 @@ height: 100%;
   justify-items: center;
 }
 
-.profile-content__text p {
+.profil-content__text p {
   display: flex;
   gap: 10px;
 }
@@ -115,6 +115,8 @@ width: 90%;
 }
 
 .portfolio-subtitle {
+  font-size: 1.2em;
+  font-weight: bold;
   text-align: center;
 }
 

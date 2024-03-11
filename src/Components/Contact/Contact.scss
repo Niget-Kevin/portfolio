@@ -6,15 +6,19 @@
     border-bottom: 2px solid $color-primary ;
 }
 
+
 .contact-me {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 42px;
     gap: 50px;
-    text-decoration: none;
+    text-transform: lowercase;
 }
-
+.contact-me .fa-solid{
+    font-size: 1.5em;
+    text-transform: lowercase;
+}
 .contact-img{
 
 color: $background-footer;
