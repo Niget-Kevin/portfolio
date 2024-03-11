@@ -1,0 +1,24 @@
+.carousel-root{
+    width: 100%;
+    height: 100%;
+}
+
+
+.carousel{
+    max-width: 100% !important;
+    border-radius: 15px;
+        &-slider{
+            width: 100%;
+    }
+}
+
+
+.carousel .thumbs{
+    cursor: pointer;
+}
+.carousel .thumbs-wrapper{
+    display: grid;
+    justify-content: center;
+}
+
+

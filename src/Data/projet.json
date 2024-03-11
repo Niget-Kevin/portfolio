@@ -1,30 +1,103 @@
 [
     {
         "id": "argent-bank",
-        "title": "argent bank",
-        "img": "Design/images/argent-bank.png",
+        "title": "Argent Bank",
+        "img": "/Design/images/argent-bank.png",
+        "picturs":
+            [
+                {"src": "/Design/projects/argent-bank/argent-bank-1.png", "alt": "argent bank page d'accueil"},
+                {"src": "/Design/projects/argent-bank/argent-bank-2.png","alt": "argent bank page login"},
+                {"src": "/Design/projects/argent-bank/argent-bank-3.png","alt": "argent bank page utilisateur"},
+                {"src": "/Design/projects/argent-bank/argent-bank-4.png","alt": "argent bank page utilisateur modification nom d'utilisateur"}
+            ],      
         "logo": "",
-        "description": "Available Balance"
+        "description":[
+                    {"title":"Gestion de Comptes avec Redux"},
+                    {"text":"Ce projet vise à concevoir une application web offrant aux utilisateurs la possibilité de se connecter et de gérer leurs comptes en mettant en œuvre Redux et en sécurisant l'accès aux différentes routes avec une authentification obligatoire. Il est essentiel de définir les endpoints de l'API requis pour gérer diverses fonctionnalités, notamment les transactions, et de rédiger un fichier Swagger pour documenter l'API."}
+                ],
+            "tag":[             
+            "React",
+            "Sass",
+            "Redux",
+            "Postman",
+            "NodeJS"                
+        ]
     },
     {
         "id": "sophie-bluel",
         "title": "Sophie Bluel",
         "img": "Design/images/sophie-bluel.png",
         "logo": "",
-        "description": "Available Balance"
+        "description": "Available Balance",
+        "tag": " "
     },
     {
         "id": "Kasa",
         "title": "Kasa",
         "img": "Design/images/Kasa.png",
         "logo": "",
-        "description": "Available Balance"
+        "description": "Available Balance",
+        "tag":[ 
+            "React",
+            "Sass",
+            "NodeJS"                
+        ]
     },
     {
         "id": "ninna-carducci",
         "title": "Ninna Carducci",
         "img": "Design/images/ninna-carducci.jpg",
         "logo": "",
-        "description": "Available Balance"
+        "description": "Available Balance",
+        "tag": " "
+    } ,
+    {
+        "id": "Qwenta",
+        "title": "Qwenta",
+        "img": "../Design/icon/redux.png",
+        "logo": "",
+        "description": "Available Balance",
+        "tag": " "
+    },
+    {
+        "id": "724events",
+        "title": "724 Events",
+        "img": "",
+        "logo": "",
+        "description": "Available Balance",
+        "tag":[
+            "HTML",
+            "CSS",
+            "Git",
+            "Bootstrap 5",
+            "Sass",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": "ohmyfood",
+        "title": "ohmyfood",
+        "img": "",
+        "logo": "",
+        "description": "Available Balance",
+        "tag":[
+            "HTML",
+            "CSS",
+            "Sass",
+            "Git"
+        ] 
+    },
+    {
+        "id": "Booki",
+        "title": "Booki",
+        "img": "",
+        "logo": "",
+        "description": "Available Balance",
+        "tag":[
+            "HTML",
+            "CSS",
+            "Figma",
+            "Git"
+        ] 
     } 
 ]
