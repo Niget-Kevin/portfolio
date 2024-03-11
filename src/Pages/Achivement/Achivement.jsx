@@ -18,7 +18,7 @@ const Achivement = () => {
         <div id='achivement'>
             <h1 className='achivement_title'>{selectedAchivement.title}</h1>
             <section id='profile'>
-                <h2 className='profile-title'></h2>
+                {/* <h2 className='profile-title'></h2> */}
                 <div className='profile-content'>                    
                     <p className='profile-content__text'>
                         {selectedAchivement.comment}
@@ -26,7 +26,7 @@ const Achivement = () => {
                 </div>
             </section>
             <section id="portfolio">                
-                <h2 className="portfolio-title"></h2>                
+                {/* <h2 className="portfolio-title"></h2>  */}               
                 <div className='collection'>
             
                 </div>
