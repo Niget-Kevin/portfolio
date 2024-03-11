@@ -1,0 +1,67 @@
+@import '../../style/mixins.scss';
+
+
+.footer {    
+    gap: 50px;
+    justify-content: space-between;    
+    display: grid;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+  .footer-text {
+    display: grid;
+    justify-content: center;
+  }
+.footer-copyright {
+    font-size: 1em;
+    padding-left: 42px;
+  }
+
+.copyright {
+    padding-right: 2px;
+    position: relative;
+    bottom: 2px;
+    font-size: 0.8em;
+  }
+
+.copyright-logo {
+    display: none;
+  }
+
+.footer-mail {
+    font-size: 1em;
+    padding-right: 60px;
+  }
+
+.footer-mail a {
+    text-decoration: none;
+  }
+
+.footer-mail a .footer-mail-icon {
+    display: none;
+  }
+
+.arrow-up {
+    background-color: rgba(34, 34, 34, 0.6);
+    cursor: pointer;
+    display: none;
+    border: 1px solid $color-primary ;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    transition: 1s;
+    -webkit-animation: scrollTopAppear 0.5s ease-in-out;
+    animation: scrollTopAppear 0.5s ease-in-out;
+  }
+
+.fa-chevron-up {
+    color: $color-primary ;
+    font-size: 1em;
+    padding: 0;
+    padding-top: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 10px 3px;
+  }

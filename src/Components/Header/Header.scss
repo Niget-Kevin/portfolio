@@ -1,0 +1,67 @@
+@import '../../style/mixins.scss';
+
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;  
+}
+
+header nav ul li  {
+  text-decoration: none;
+  &:hover{
+    transform: scale(1.2);
+    transition: transform 0.4s cubic-bezier(0.23,1.83,0.42,1.19);
+  }
+}
+
+#navbar{
+  background-color: $color-primary;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 10px 5px 5px rgb(87, 85, 85);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.fixed-nav {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;  
+  z-index: 1000;
+  border-radius: 15px;
+}
+
+.nav_bottom {
+  text-decoration: none;
+  color: $color-primary;
+  padding: 5px;
+  width: 100%;
+
+  &:hover {
+    animation: rotateBorderColor 2s linear infinite;
+  }
+}
+
+.nav-text {
+  padding: 10px;
+  font-size: 1rem;
+  color:$color-secondary ;
+}
+
+.nav-icon{
+color:rgb(102, 101, 104) ;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column-reverse;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}

@@ -1,0 +1,49 @@
+@import '../../style/mixins.scss';
+
+.error{
+    &__title,
+    &__text
+    {
+        color:$color-primary;
+    }
+    &__link{
+        color: $color-txt;
+    }
+}
+
+.error {
+    @include grid-column (1);
+
+    &__title{        
+        font-size: 233px;
+        font-style: normal;
+        margin: 24px auto 84px;
+        @include media-max("tablet-up"){
+            font-size: 69px;
+        } 
+    }
+
+    &__text{
+        display: flex;
+
+        @include font-large;
+        margin: 0px auto;
+
+        @include media-max("tablet-up"){
+            @include font-small;
+            margin: 0 auto;
+            
+
+        } 
+    }
+
+    &__link{
+        @include font-small;
+        margin: 139px auto;
+
+        @include media-max("tablet-up"){
+            @include font-min;
+    
+        } 
+    }
+}

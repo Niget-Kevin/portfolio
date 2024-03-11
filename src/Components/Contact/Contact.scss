@@ -1,0 +1,24 @@
+@import '../../style/mixins.scss';
+#contact {
+    display: grid;
+    gap: 50px;
+    border-bottom: 2px solid $color-primary ;
+}
+
+.contact-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 42px;
+    gap: 50px;
+    text-decoration: none;
+}
+
+.contact-img{
+
+color: $background-footer;
+}
+
+
+
+

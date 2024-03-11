@@ -1,0 +1,30 @@
+[
+    {
+        "id": "argent-bank",
+        "title": "argent bank",
+        "img": "Design/images/argent-bank.png",
+        "logo": "",
+        "description": "Available Balance"
+    },
+    {
+        "id": "sophie-bluel",
+        "title": "Sophie Bluel",
+        "img": "Design/images/sophie-bluel.png",
+        "logo": "",
+        "description": "Available Balance"
+    },
+    {
+        "id": "Kasa",
+        "title": "Kasa",
+        "img": "Design/images/Kasa.png",
+        "logo": "",
+        "description": "Available Balance"
+    },
+    {
+        "id": "ninna-carducci",
+        "title": "Ninna Carducci",
+        "img": "Design/images/ninna-carducci.jpg",
+        "logo": "",
+        "description": "Available Balance"
+    } 
+]

@@ -1,0 +1,132 @@
+@import './variable.scss';
+
+
+// Mixin pour la mise en page flex 
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row() {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin flex-start() {
+    display: flex;
+    
+    justify-content: start;
+}
+
+@mixin flex-between() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-column() {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+// Mixin pour la mise en page grid
+
+
+@mixin grid-column($columns: 1) {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat($columns, 1fr);
+}
+
+@mixin grid-center(){
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid-end(){
+    display: grid;
+    justify-content: center;
+    align-items: end;
+}
+
+// Mixin pour appliquer les propriétés de police
+@mixin font($size, $weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+//12px
+@mixin font-tel() {
+    @include font($font-size-tel, $font-weight-medium);
+}
+
+//14px
+@mixin font-min() {
+    @include font($font-size-min, $font-weight-medium);
+}
+
+//18px
+@mixin font-small() {
+    @include font($font-size-small, $font-weight-medium);
+}
+
+//24px
+@mixin font-medium() {
+    @include font($font-size-medium, $font-weight-medium);
+}
+
+//36px
+@mixin font-large() {
+    @include font($font-size-large, $font-weight-medium);
+}
+
+//48px
+@mixin font-max() {
+    @include font($font-size-max, $font-weight-medium);
+}
+// Exemples d'utilisation des mixins
+.element-medium {
+    @include font-medium;
+}
+
+/*breakpoints*/
+
+$breakpoints: (
+	"phone-down": 586px,
+	"tablet-up": 724px,
+	"tablet-down": 900px,
+	"desktop-up": 1024px,
+	"desktop-down": 1280px,
+	"widescreen-up": 1440px
+);
+
+@mixin media-max($_key) {
+    @media screen and (max-width: map-get($breakpoints, $_key)) {
+        &{ @content; }
+    }
+}
+@mixin media-min($_key) {
+    @media screen and (max-width: map-get($breakpoints, $_key)) {
+        &{ @content; }
+    }
+}
+
+// Exemples d'utilisation des breakpoints
+.element{
+@include media-max("tablet-up"){
+    color:$color-primary;
+    } 
+}
+
+@keyframes spinRingClockwise {
+    0% { transform: translateZ(100px) rotateX(0deg) rotateY(0deg); }
+    100% { transform: translateZ(-100px) rotateX(360deg) rotateY(360deg); }
+}
+
+@keyframes spinRingAntiClockwise {
+    0% { transform: translateZ(100px) rotateX(0deg) rotateY(0deg); }
+    100% { transform: translateZ(-100px) rotateX(-90deg) rotateY(-360deg); }
+}

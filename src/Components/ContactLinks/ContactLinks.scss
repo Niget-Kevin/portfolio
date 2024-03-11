@@ -1,0 +1,13 @@
+@import '../../style/mixins.scss';
+.coordinates {
+width: 30vw;
+}
+
+.coordinates_link {
+display: block;
+text-decoration: none;
+}
+
+.coordinates_link i {
+color: $color-primary ;
+}

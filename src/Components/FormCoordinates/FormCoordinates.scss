@@ -1,0 +1,60 @@
+@import '../../style/mixins.scss';
+.coordinates {
+justify-content: space-evenly;
+}
+
+.coordinates__datas {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+
+.coordinates__name {
+width: 15%;
+}
+
+.coordinates__name #lastname,
+.coordinates__name #firstname {
+width: 80%;
+text-align: center;
+}
+
+.coordinates__datas {
+width: 20%;
+}
+
+.coordinates__datas #email {
+width: 90%;
+text-align: center;
+}
+
+.coordinates__datas #tel {
+width: 40%;
+text-align: center;
+}
+
+.coordinates, 
+.contact-form-mail {
+    display: flex;
+    border: 1px solid $color-primary ;
+    border-radius: 5px;
+    font-size: 1.2em;
+    padding-bottom: 20px;
+}
+.coordinates input,
+.coordinates textarea, 
+.contact-form-mail input,
+.contact-form-mail textarea {
+color: $color-secondary;
+background-color: $color-primary ;
+padding-left: 10px;
+font-size: 16px;
+border-radius: 5px;
+}
+.coordinates input:focus,
+.coordinates textarea:focus,.contact-form-mail input:focus,
+.contact-form-mail textarea:focus {
+background-color: $color-secondary;
+color: $color-primary ;
+}
