@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
-import "./Card.scss"
-
-
+import "./Card.scss";
 
 function Card({ id, title, img}) {
+    const handleClick = () => {
+        window.scrollTo(0, 0); // Déplacer la page vers le haut sans transition fluide
+    }
 
     return (
-      <Link to={`/Achivement/${id}` }>
+      <Link to={`/Achivement/${id}`} onClick={handleClick}>
         <div className='card'>
           <div>
           <h3 className='card__title'>{title}</h3>
@@ -15,6 +16,6 @@ function Card({ id, title, img}) {
         </div>
       </Link>
     )
-  }
-  
-  export default Card
+}
+
+export default Card;
