@@ -29,10 +29,13 @@
 @mixin flex-column() {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
 // Mixin pour la mise en page grid
+
 
 
 @mixin grid-column($columns: 1) {
@@ -45,6 +48,7 @@
     display: grid;
     justify-content: center;
     align-items: center;
+    justify-items: center;
 }
 
 @mixin grid-end(){
@@ -123,7 +127,7 @@ $breakpoints: (
 
 @keyframes spinRingClockwise {
     0% { transform: translateZ(100px) rotateX(0deg) rotateY(0deg); }
-    100% { transform: translateZ(-100px) rotateX(360deg) rotateY(360deg); }
+    100% { transform: translateZ(-100px) rotateX(360deg) rotateY(360deg); }   
 }
 
 @keyframes spinRingAntiClockwise {

@@ -1,4 +1,5 @@
 @import '../../Style/variable.scss';
+@import '../../Style/mixins.scss';
 
 #home {
   display: grid;
@@ -81,7 +82,6 @@ height: 100%;
   margin: 5px;
   gap: 30px;
   justify-content: center;
-  font-size: 1.2rem;
   line-height: 1.5;
   color:black; ;
   border-radius: 15px;
@@ -115,7 +115,6 @@ width: 90%;
 }
 
 .portfolio-subtitle {
-  font-size: 1.2em;
   font-weight: bold;
   text-align: center;
 }
@@ -123,12 +122,18 @@ width: 90%;
 .collection {
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   max-width: 1240px;   
   border-radius: 25px;
   width: 95%;
   padding: 50px;
   margin: 43px auto 50px;
   gap: 100px;
+  @include media-min("desktop-up"){
+    gap: 50px;
+    } 
+  @include media-min("tablet-up"){
+    grid-template-columns: 1fr;
+    } 
   
 }

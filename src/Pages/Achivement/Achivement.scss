@@ -1,17 +1,18 @@
 @import '../../Style/variable.scss';
+@import '../../Style/mixins.scss';
 
 #achivement{
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    @include grid-center;
     justify-items: center
 }
 
 .achivement{
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    @include grid-center;
     width: 80%;
+    @include media-max("tablet-up"){
+        width: 100%;
+        }
+
         &_title{
             margin-bottom: 100px;
     }
@@ -21,7 +22,7 @@
 }
 
 .achivement-content{
-    display: grid;
+    @include grid-center;
     gap: 50px;
     padding-bottom: 100px;
     width: 100%;
@@ -32,64 +33,70 @@
             width: 100%;
         }
         &__text{
-            background-color: $color-secondary;
-            font-size: 1.5em;
-            font-weight: 300;
-            display: grid;
+            @include grid-center;
+            background-color: $color-secondary;           
+            font-weight: 300;           
             width: 90%;
             text-align: center;
             padding: 20px 30px;
             margin: 5px;
-            gap: 30px;
-            justify-content: center;
+            gap: 30px;            
             line-height: 1.5;
             color:black; ;
             border-radius: 15px;
-            letter-spacing: 1px;
-            justify-items: center;
+            letter-spacing: 1px; 
+            
+            @include media-min("phone-down"){
+                width: 100%;
+                }
         }        
 }
-.tools{
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 100px;
 
-        &-title{
-            display: grid;
-    justify-content: center;
-    align-items: center;
-        }
-
-        &__text{
-            img{
-                font-size: 50px;
-            }
-        }
-}
-
-.tools{
-    display: grid;
-    width: 100%;
-    height: 100%;
-}
-
-/* .tools-title{
-    font-size: 2em;
-    padding-bottom: 5px;
+/* .carousel-root{
+    width: 80%;
+    height: 80%;
 } */
 
-.tools-text{
-    display: flex;
+.tools {
+    @include flex-column;
     gap: 50px;
-    height: 100%;
+    padding-bottom: 100px;
     width: 100%;
+    height: 100%;
+
+        &-title{
+            
+    justify-content: center;
+    align-items: center;
+        }
+
+        &-text{      
+            @include flex-center;
+            gap: 50px;
+            height: 100%;
+            width: 100%;
+
+            @include media-min("desktop-up"){
+                @include grid-center;
+                gap: 25px;
+                grid-template-columns: 1fr 1fr;
+                height: 50%;
+                width: 50%;    
+                transition: all 0.3s ease;            
+            } 
+            @include media-min("phone-down"){
+                grid-template-columns: 1fr;
+                transition: all 0.3s ease;
+                } 
+        }
 }
+
+
 
 .tools-text img {
     width: 100%;
     height: 100%;
+    font-size: 50px;
 
 
 
@@ -98,6 +105,7 @@
 .tools-text svg {
     width: 100%;
     height: 100%;  
+    max-width: 75px;
 }
 
 
@@ -108,15 +116,26 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    max-width: 75px;
+    @include media-min("tablet-up"){
+        max-width: 50%;
+        } 
 }
-.icon-name{
+.icon-name {
     padding: 7%;
     background-color: $background-footer;
     border-radius: 15px;
     color: $color-secondary;
-    font-size: 1em
-}
 
+        @include media-max("desktop-up"){
+            font-size: 1em ;
+            } 
+
+        @include media-min("phone-down"){            
+            font-size: .6em;
+            }
+
+}
 
 .react-icon {
     color: #357da1;
@@ -130,4 +149,11 @@
 }
 .icon-JavaScript {
     color: #fbbc04;
+}
+
+.icon-css{
+    color: rgb(55, 154, 214);
+}
+.icon-html{
+    color: rgb(228, 77, 38);
 }

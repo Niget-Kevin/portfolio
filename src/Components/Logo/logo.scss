@@ -8,6 +8,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+        @include media-min("desktop-up"){
+            
+            }
+
+        @include media-min("phone-down"){
+        
+        }
 }
 
 .logo-container {
@@ -15,7 +23,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1; 
+    z-index: 1;         
 }
 
 .logo-text {
@@ -24,7 +32,15 @@
     font-family: Arial, Helvetica;
     color: #000;
     display: inline-block;
-    margin: 0;
+    margin: 0;    
+
+        @include media-min("desktop-up"){
+            font-size: 30px;
+        }
+
+        @include media-min("phone-down"){
+            font-size: 20px;
+        }
 }
 
 .ring-container {
@@ -38,6 +54,7 @@
     transform-style: preserve-3d; 
     transform: translateZ(-100px); 
     animation: 8s infinite ease-in-out;
+
 }
 
 .ring {

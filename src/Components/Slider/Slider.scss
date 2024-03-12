@@ -6,7 +6,6 @@
     height: 100%;
 }
 
-
 .carousel{
     border-radius: 15px;
 
@@ -17,27 +16,42 @@
     }
 }
 
-.carousel .slider-wrappe{
+.slider-wrappe{
     max-height: 700px;
 }
-.carousel .slide img{
+.slide img{
     object-fit: cover;
     object-position: center;
     width: 100%;
     height: 100%;
+    
 }
 
-.carousel .thumbs{
+.thumbs{
     cursor: pointer;
+
+        @include media-max("tablet-up"){
+            display: none;
+            } 
 }
-.carousel .thumbs-wrapper{
+
+.thumbs-wrapper{
     display: grid;
     justify-content: center;
 }
 
 
-.carousel .control-dots{
+.control-dots{
     background-color: $color-border-bottom;
     padding: 10px;
     margin: 0;
+
+        @include media-min("desktop-up"){
+            padding: 5px;
+            } 
+
+        @include media-min("phone-down"){
+            padding: 0;
+        }
 }
+

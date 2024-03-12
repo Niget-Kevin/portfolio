@@ -1,33 +1,44 @@
 @import '../../Style/mixins.scss';
 
-
 header nav ul {
   display: flex;
   justify-content: space-between;
   padding-right: 20px;
-  padding-left: 20px;  
+  padding-left: 20px; 
+  @include media-min("tablet-up") {     
+    gap: 30px;
+    
+  }    
 }
 
 header nav ul li  {
   text-decoration: none;
-  &:hover{
+  &:hover {
     transform: scale(1.2);
     transition: transform 0.4s cubic-bezier(0.23,1.83,0.42,1.19);
   }
 }
 
-#navbar{
+#navbar {
   background-color: $color-primary;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius:  0px 0px 15px 15px ;
   box-shadow: 10px 5px 5px rgb(87, 85, 85);
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-end;  
+  @include media-min("tablet-up") {   
+    justify-content: center;
+    width: 100%;
+    
+  } 
 }
-
+header nav ul{
+  @include media-min("tablet-up") {
+    
+  } 
+}
 .fixed-nav {
   position: fixed;
   display: flex;
@@ -35,6 +46,9 @@ header nav ul li  {
   left: 0;  
   z-index: 1000;
   border-radius: 15px;
+  @include media-min("tablet-up") {     
+    gap: 30px;
+  } 
 }
 
 .nav_bottom {
@@ -42,20 +56,34 @@ header nav ul li  {
   color: $color-primary;
   padding: 5px;
   width: 100%;
-
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-end;
+  flex-direction: row; 
+  
   &:hover {
     animation: rotateBorderColor 2s linear infinite;
+  }
+
+  @include media-min("tablet-up") {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px 0;
+    width: auto;
   }
 }
 
 .nav-text {
   padding: 10px;
-  font-size: 1rem;
-  color:$color-secondary ;
+  color: $color-secondary;
+  @include media-min("tablet-up") {
+    display: none; 
+  }
 }
 
-.nav-icon{
-color:rgb(102, 101, 104) ;
+.nav-icon {
+  color: rgb(102, 101, 104);
 }
 
 .main-nav {

@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import ErrorComponent from '../Error/Error';
 import Slider from '../../Components/Slider/slider'; 
-import { FaReact, FaSass, FaNodeJs, FaJs } from 'react-icons/fa'; // Ajout de FaJs
+import { FaReact, FaSass, FaNodeJs, FaJs, FaHtml5, FaCss3 } from 'react-icons/fa'; // Ajout de FaJs
 import reduxIcon from '../../Design/icon/redux.png';
 import postmanIcon from '../../Design/icon/postman.png';
 import './Achivement.scss';
@@ -65,8 +65,20 @@ const Achivement = () => {
                             )}
                             {tagsWithSpaces.includes("JavaScript") && (
                                 <div className="icon-container">
-                                    <FaJs className="icon-JavaScript" /> {/* Utilisation de FaJs */}
+                                    <FaJs className="icon-JavaScript" /> 
                                     <span className="icon-name">JavaScript</span>
+                                </div>
+                            )}
+                            {tagsWithSpaces.includes("HTML") && (
+                                <div className="icon-container">
+                                    <FaHtml5 className="icon-html" /> 
+                                    <span className="icon-name">HTML 5</span>
+                                </div>
+                            )}
+                            {tagsWithSpaces.includes("CSS") && (
+                                <div className="icon-container">
+                                    <FaCss3 className="icon-css" /> 
+                                    <span className="icon-name">CSS 3</span>
                                 </div>
                             )}
                         </div>
@@ -75,6 +87,6 @@ const Achivement = () => {
             </section>                                   
         </div>
     ); 
-}
+}   
 
 export default Achivement;
