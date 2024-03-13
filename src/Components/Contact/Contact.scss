@@ -8,17 +8,22 @@
 
 
 .contact-me {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     margin-bottom: 42px;
     gap: 50px;
-    text-transform: lowercase;
+    
+    
 }
-.contact-me .fa-solid{
+.email-link {
+    @include flex-center;
+    gap: 20px;
     text-transform: lowercase;
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+    
 }
-.contact-img{
+.contact-img {
 
 color: $background-footer;
 }

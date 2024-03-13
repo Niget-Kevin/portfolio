@@ -7,7 +7,6 @@ header nav ul {
   padding-left: 20px; 
   @include media-min("tablet-up") {     
     gap: 30px;
-    
   }    
 }
 
@@ -30,15 +29,10 @@ header nav ul li  {
   justify-content: flex-end;  
   @include media-min("tablet-up") {   
     justify-content: center;
-    width: 100%;
-    
+    width: 100%;    
   } 
 }
-header nav ul{
-  @include media-min("tablet-up") {
-    
-  } 
-}
+
 .fixed-nav {
   position: fixed;
   display: flex;
@@ -92,4 +86,12 @@ header nav ul{
   object-fit: cover;
   background-size: cover;
   background-repeat: no-repeat; 
+
+
+
+  &.scrolled {
+    .header-container {
+      color: $color-secondary;
+    }
+  }
 }

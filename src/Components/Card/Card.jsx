@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import "./Card.scss";
 
-function Card({ id, title, img}) {
+function Card({ id, title, img, alt}) {
     const handleClick = () => {
         window.scrollTo(0, 0); // Déplacer la page vers le haut sans transition fluide
     }
@@ -11,7 +11,7 @@ function Card({ id, title, img}) {
         <div className='card'>
           <div>
           <h3 className='card__title'>{title}</h3>
-          <img src={img} alt={title} className='card__image'/>              
+          <img src={img} alt={alt} className='card__image'/>              
           </div>      
         </div>
       </Link>

@@ -27,7 +27,7 @@ function Header() {
             <nav id="navbar">
                 <ul>                   
                     <li>
-                        <NavHashLink smooth to="/#" className="nav_bottom">
+                        <NavHashLink smooth to="/" className="nav_bottom">
                             <span className="nav-text">Accueil</span>
                             <i className="fa-solid fa-house nav-icon" title="Accueil"></i>
                         </NavHashLink>
@@ -38,13 +38,6 @@ function Header() {
                             <i className="fa-solid fa-circle-user nav-icon" title="Profil"></i>
                         </NavHashLink>
                     </li>
-                    {/* ajouter une page profil */}
-                    {/* <li>
-                        <NavHashLink smooth to="/competences" className="nav_bottom">
-                            <span className="nav-text">Compétences</span>
-                            <i className="fa-solid fa-screwdriver-wrench nav-icon" title="Compétences"></i>
-                        </NavHashLink>
-                    </li> */}
                     <li>
                         <NavHashLink smooth to="/#portfolio" className="nav_bottom">
                             <span className="nav-text">Réalisations</span>

@@ -8,6 +8,9 @@
   align-items: center;
   justify-items: center;
   gap: 200px;  
+  @include media-min("phone-down"){
+    gap: 100px;
+  } 
 }
 
 .home_header{
@@ -22,6 +25,10 @@
   justify-items: center;  
   border-radius: 15px;
   box-shadow: 10px 5px 5px rgb(87, 85, 85);
+
+    @include media-min("phone-down"){
+      height: 220px;
+    } 
 }
 
 .home-text {
@@ -34,6 +41,9 @@ height: 100%;
   border-top: 4px solid var($color-secondary);
   border-radius: 5rem;
   margin: 2rem auto;
+    @include media-min("phone-down"){
+      margin: 0.8em auto;
+    } 
 }
 
 #profil {

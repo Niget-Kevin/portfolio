@@ -3,6 +3,7 @@
         "id": "argent-bank",
         "title": "Argent Bank",
         "img": "/Design/images/argent-bank.png",
+        "alt": "logo argent bank",
         "pictures":
             [
                 {"src": "/Design/projects/argent-bank/argent-bank-1.png", "alt": "argent bank page d'accueil"},
@@ -28,6 +29,7 @@
         "id": "Kasa",
         "title": "Kasa",
         "img": "Design/images/Kasa.png",
+        "alt": "logo kasa",
         "pictures":
             [
                 {"src": "/Design/projects/kasa/kasa1.png", "alt": "argent bank page d'accueil"},                
@@ -49,6 +51,7 @@
     {
         "id": "ohmyfood",
         "title": "Ohmyfood",
+        "alt": "logo ohmyfood",
         "img": "/Design/images/ohmyfood.png",
         "pictures": [
                 {"src": "/Design/projects/ohmyfood/ohmyfood1.png", "alt": "page Le délice des sens"},
