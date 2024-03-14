@@ -3,8 +3,7 @@ import { NavHashLink } from 'react-router-hash-link';
 import Logo from '../Logo/logo';
 import './Header.scss';
 
-function Header() {
-    
+function Header() {   
 
     window.addEventListener('scroll', () => {
         const nav = document.querySelector('header nav');
@@ -27,25 +26,25 @@ function Header() {
             <nav id="navbar">
                 <ul>                   
                     <li>
-                        <NavHashLink smooth to="/" className="nav_bottom">
+                        <NavHashLink smooth to="/" className="nav_bottom" >
                             <span className="nav-text">Accueil</span>
                             <i className="fa-solid fa-house nav-icon" title="Accueil"></i>
                         </NavHashLink>
                     </li>
                     <li>
-                        <NavHashLink smooth to="/#profil" className="nav_bottom">
+                        <NavHashLink smooth to="/#profil" className="nav_bottom" >
                             <span className="nav-text">Profil</span>
                             <i className="fa-solid fa-circle-user nav-icon" title="Profil"></i>
                         </NavHashLink>
                     </li>
                     <li>
-                        <NavHashLink smooth to="/#portfolio" className="nav_bottom">
+                        <NavHashLink smooth to="/#portfolio" className="nav_bottom" >
                             <span className="nav-text">Réalisations</span>
                             <i className="fa-solid fa-code nav-icon" title="Réalisations"></i>
                         </NavHashLink>
                     </li>
                     <li>
-                        <NavHashLink smooth to="/#contact" className="nav_bottom">
+                        <NavHashLink smooth to="/#contact" className="nav_bottom" >
                             <span className="nav-text">Contact</span>
                             <i className="fa-solid fa-envelope nav-icon" title="Contact"></i>
                         </NavHashLink>

@@ -18,7 +18,7 @@ function App() {
             <Header />
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/Achivement/:id" element={<Achivement/>} />    
+              <Route path="/:id" element={<Achivement/>} />    
               <Route path="*" element={<Error />} /> 
             </Routes>
           </main>

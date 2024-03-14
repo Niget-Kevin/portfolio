@@ -37,8 +37,9 @@ function Home() {
                             <Card
                                 key={data.id} 
                                 id={data.id} 
-                                title={data.title} 
+                                title={data.title}                                 
                                 img={data.img} 
+                                alt={data.alt}
                             />
                             )
                         })}

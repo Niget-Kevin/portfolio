@@ -3,11 +3,11 @@ import "./Card.scss";
 
 function Card({ id, title, img, alt}) {
     const handleClick = () => {
-        window.scrollTo(0, 0); // Déplacer la page vers le haut sans transition fluide
+        window.scrollTo(0, 0);
     }
 
     return (
-      <Link to={`/Achivement/${id}`} onClick={handleClick}>
+      <Link to={`/${id}`} onClick={handleClick}>
         <div className='card'>
           <div>
           <h3 className='card__title'>{title}</h3>
