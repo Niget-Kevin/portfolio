@@ -26,7 +26,7 @@ function Header() {
             <nav id="navbar">
                 <ul>                   
                     <li>
-                        <NavHashLink smooth to="/" className="nav_bottom" >
+                        <NavHashLink smooth to="/#" className="nav_bottom" >
                             <span className="nav-text">Accueil</span>
                             <i className="fa-solid fa-house nav-icon" title="Accueil"></i>
                         </NavHashLink>
