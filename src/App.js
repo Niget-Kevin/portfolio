@@ -14,8 +14,8 @@ function App() {
     <React.StrictMode>
       <Router>
         <div>
-          <main className='main_container'>
-            <Header />
+        <Header />
+          <main className='main_container'>            
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/:id" element={<Achivement/>} />    

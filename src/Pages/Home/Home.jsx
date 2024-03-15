@@ -8,14 +8,12 @@ function Home() {
     return (
         <div id='home'>
             <div className='home_header'>
-                {/* <img src="/Design/backgroud/background-home.jpg" alt="" /> */}
                 <h1 className='home-text'>Niget Kevin <hr className='home-divider'/> développeur Web Frontend</h1>
             </div>
 
             <section id='profil'>
                 <h2 className='profil-title'>Présentation</h2>                
-                <div className='profil-content'>     
-                   {/*  <img src="/Design/images/moi2.png" alt="test" className='profil-content-img'/>   */}     
+                <div className='profil-content'>   
                     <div className='profil-content__text'>
                         <p>Tout au long de mon parcours professionnel,j’ai toujours été attiré par les opportunités et les défis qui me passionnent. </p>
                         <p>C’est pourquoi je suis enthousiaste à l’idée d’avoir un impact significatif au sein d’une entreprise en pleine croissance.</p>
